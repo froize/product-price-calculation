@@ -21,10 +21,8 @@
    1) Install composer packages. If you have composer installed outside of docker, run `composer install`. 
    Else use `docker-compose exec php composer install`, but be aware of possible permission issues.
    2) Install npm packages `docker-compose exec php npm install`
-6. Compile your assets `docker-compose exec php npm run dev`
-7. Run `docker-compose exec php bin/console lexik:jwt:generate-keypair --skip-if-exists`
-8. Run DB migrations `docker-compose exec php bin/console doctrine:migrations:migrate`
-9. Go to https://symfony-test.loc/ and have fun.
+6. Run DB migrations `docker-compose exec php bin/console doctrine:migrations:migrate`
+7. Go to https://symfony-test.loc/ and have fun.
 
 ### Potential errors and fixes during installation
 
