@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+    <div class="container pt-5">
+        <div class="pt-5 alert alert-info">
+            {% if country is defined %}
+                <p>Country: {{country.name }}</p>
+            {% endif %}
+            {% if total_price is defined %}
+                <p>Total price: {{total_price }} EUR</p>
+            {% endif %}
+        </div>
+        <div class="pt-5">
+            {{ form(form) }}
+        </div>
+    </div>
+{% endblock %}

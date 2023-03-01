@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "encore production --progress",
+    "dev": "encore dev",
+    "dev-server": "encore dev-server",
+    "watch": "encore dev --watch"
+  },
+  "dependencies": {
+    "@formkit/vue": "^1.0.0-beta.10",
+    "axios": "^0.27.2",
+    "pinia": "^2.0.18",
+    "vue": "^3.2.37",
+    "vue-loader": "^17.0.0",
+    "vue-router": "^4.1.3",
+    "vue-template-compiler": "^2.7.8"
+  },
+  "devDependencies": {
+    "@hotwired/stimulus": "^3.0.0",
+    "@popperjs/core": "^2.11.6",
+    "@symfony/stimulus-bridge": "^3.2.0",
+    "@symfony/webpack-encore": "^3.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "^5.0.8",
+    "bootstrap": "^5.2.0",
+    "core-js": "^3.23.0",
+    "jquery": "^3.6.0",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.54.4",
+    "sass-loader": "^13.0.2",
+    "webpack-notifier": "^1.15.0"
+  },
+  "license": "UNLICENSED"
+}
