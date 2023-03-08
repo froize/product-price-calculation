@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Controller;
 
-use App\Entity\Country;
 use App\Form\PriceCalculationType;
 use App\Service\PriceCalculationService;
 use Psr\Log\LoggerInterface;
@@ -41,22 +42,10 @@ class IndexController extends AbstractController
                 $form->addError(new FormError($exception->getMessage()));
                 $logger->error($exception->getMessage(), ['exception' => $exception]);
             }
-
-
         }
 
         return $this->render('index/index.html.twig', [
             'form' => $form->createView()
         ]);
-    }
-
-    #[Route('/fill-data', name: 'app_fill_data')]
-    public function fillData(string $route = ''): Response
-    {
-        $country = new Country();
-        $country->setName('Germany');
-        $country->setCode('DE');
-
-        return new Response();
     }
 }
